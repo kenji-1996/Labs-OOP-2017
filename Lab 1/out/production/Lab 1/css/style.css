@@ -1,0 +1,9 @@
+.label {
+    -fx-font: 29px "Serif";
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 10;
+    -fx-background-color: #CCFF99;
+}
+.button {
+    -fx-font: 20px "Serif";
+}
