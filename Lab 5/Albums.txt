@@ -1,0 +1,7 @@
+A01/Defiance/Soundtrack/true/24
+A02/Insomniac/Punk Rock/true/14
+A03/A Great Day For The.../Gypsy Jazz/false/10
+A04/Viva La Internet/Ska/false/31
+A05/New Surrender/Rock/false/17
+A06/Swipe Right for Vintage/Swing/false/12
+A07/Coco Part 2/Swing/false/13
