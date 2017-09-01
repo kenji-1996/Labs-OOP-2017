@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <center>
+      <TableView fx:id="albumTable" prefHeight="267.0" prefWidth="375.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="168.0" text="Name" />
+          <TableColumn fx:id="genreCol" prefWidth="82.0" text="Genre" />
+          <TableColumn fx:id="compilationCol" prefWidth="83.0" text="Compilation?" />
+          <TableColumn fx:id="tracksCol" prefWidth="65.0" text="# Tracks" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="52.0" prefWidth="440.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="filterField" layoutX="41.0" layoutY="1.0" />
+            <Label layoutX="14.0" layoutY="5.0" text="Filter" />
+            <Button fx:id="sortBtn" layoutX="1.0" layoutY="26.0" mnemonicParsing="false" onAction="#filterTable" text="Sort by Genre and Track Count" />
+            <Button fx:id="restoreBtn" layoutX="182.0" layoutY="26.0" mnemonicParsing="false" onAction="#resetFilter" text="Restore Order" />
+            <Button fx:id="addBtn" layoutX="273.0" layoutY="26.0" mnemonicParsing="false" onAction="#addAlbum" text="Add Album" />
+            <Button fx:id="deleteBtn" layoutX="349.0" layoutY="26.0" mnemonicParsing="false" onAction="#removeAlbum" text="Delete Album" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
